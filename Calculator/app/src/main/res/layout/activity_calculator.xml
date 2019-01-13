@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Layout for portrait mode -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context=".CalculatorActivity">
+
+    <!--Create a edit box for 1st input value (Decimal value) -->
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/op1_hint"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <!--Create a edit box for 2st input value (Decimal value) -->
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/op2_hint"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <!-- Create a Lable for Result -->
+    <TextView
+        android:id="@+id/textView_ResultLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:text="@string/result_label_text"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textStyle="bold" />
+
+    <!--Create a view box to see the Result -->
+    <TextView
+        android:id="@+id/textView_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_weight="1"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@android:color/holo_green_dark"
+        tools:text="@string/calculated_value"/>
+
+    <!--Create a button for addition operation -->
+    <Button
+        android:id="@+id/button_op_plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/plus"
+        android:textSize="18sp" />
+
+    <!--Create a button for substraction operation -->
+    <Button
+        android:id="@+id/button_op_minus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/minus"
+        android:textSize="18sp" />
+
+    <!--Create a button for multiplication operation -->
+    <Button
+        android:id="@+id/button_op_mult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/mult"
+        android:textSize="18sp" />
+
+    <!--Create a button for division operation -->
+    <Button
+        android:id="@+id/button_op_div"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/div"
+        android:textSize="18sp" />
+
+    <!--Create a button for percentage operation -->
+    <Button
+        android:id="@+id/button_op_pct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/ptr"
+        android:textSize="18sp" />
+
+    <!--Create a button for sqare root operation -->
+    <Button
+        android:id="@+id/button_op_sqrt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/sqtr"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
